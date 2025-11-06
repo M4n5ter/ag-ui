@@ -1,6 +1,7 @@
 type envVars = {
   serverStarterUrl: string;
   serverStarterAllFeaturesUrl: string;
+  reactAgentscopeUrl: string;
   mastraUrl: string;
   langgraphPythonUrl: string;
   langgraphFastApiUrl: string;
@@ -30,6 +31,7 @@ export default function getEnvVars(): envVars {
   return {
     serverStarterUrl: process.env.SERVER_STARTER_URL || 'http://localhost:8000',
     serverStarterAllFeaturesUrl: process.env.SERVER_STARTER_ALL_FEATURES_URL || 'http://localhost:8000',
+    reactAgentscopeUrl: process.env.REACT_AGENTSCOPE_URL || 'http://localhost:8000',
     mastraUrl: process.env.MASTRA_URL || 'http://localhost:4111',
     langgraphPythonUrl: process.env.LANGGRAPH_PYTHON_URL || 'http://localhost:2024',
     langgraphFastApiUrl: process.env.LANGGRAPH_FAST_API_URL || 'http://localhost:8000',
